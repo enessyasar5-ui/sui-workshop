@@ -125,6 +125,11 @@ export function CreateHero({ refreshKey, setRefreshKey }: RefreshProps) {
               <Text size="4">
                 {name}
               </Text>
+              {power > 0 && (
+                <Text size="2" color="gray">
+                  Generated power: {power}
+                </Text>
+              )}
               {imageUrl && (
                 <img
                   src={imageUrl}
